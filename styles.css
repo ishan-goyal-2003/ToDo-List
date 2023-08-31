@@ -1,0 +1,273 @@
+/* @font-face{
+    font-family: myFont;
+    src:url(CARTOON.otf);
+} */
+*{
+    font-family: Copperplate;
+    margin: 0;
+    padding: 0;                                    
+}
+
+body{
+    background-color: #183D3D;
+}
+
+.sidebar{
+    height: 100%;
+    width: 25vw;
+    position: fixed;
+    background-color: #040D12;
+    display: flex;
+    justify-content: center;
+    color: #93B1A6;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.heading{
+    padding-top: 3vh;
+    font-size: 4vw;
+}
+.headingdiv{
+    display: flex;
+    justify-content: center;
+}
+.entertask{
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+}
+input,button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+
+}
+#input1{
+    background-color: #5C8374;
+    padding: 1.5vh;
+    border-radius: 1.5vh;
+    width: 20vw;
+    font-size: larger;
+}
+#addbtn{
+    background-color: #5C8374;
+    padding: 1.5vh;
+    border-radius: 1vh;
+    font-size: larger;
+    width: 10vw;
+
+}
+.addbtn{
+    background-color: #5C8374;
+    padding: 1.5vh;
+    border-radius: 1vh;
+    font-size: larger;
+    width: 10vw;
+}
+#dateinput{
+    background-color: #5C8374;
+    padding: 1.5vh;
+    border-radius: 1vh;
+    font-size: large;
+    width: 19.8vw;
+}
+select{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+#selectcat{
+    background-color: #5C8374;
+    padding: 1.5vh;
+    border-radius: 1vh;
+    font-size: large;
+    width: 21vw;
+}
+.btn{
+    margin-top: 8vh;
+    margin-left: 5vw;
+}
+.main{
+    margin-left: 25vw;
+    padding-top: 2vh ;
+    padding-left: 1vw;
+    display: flex;
+    color: #9DB2BF;
+}
+.main h2{
+    padding-top: 1vh;
+    font-size: 1.8vw;
+}
+#dateDisplay{
+    font-size: 1.5vw;
+    padding-top: 1.6vh;
+    padding-left: 1vw;
+}
+.inputsearch{
+    margin-left: 20vw;
+    background-color: #040D12;
+    padding: 1.5vh;
+    border-radius: 1vh;
+    font-size: large;
+    color: #93B1A6;
+}
+.searchbtn{
+    background-color: #040D12;
+    padding: 1.5vh;
+    border-radius: 1vh;
+    font-size: large;
+    color: #93B1A6;
+    margin-left: 0.5vw;
+}
+.main2{
+    margin-left: 28vw;
+    margin-top: 5vh ;
+    padding-left: 1vw;
+    padding: 1.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    color: #9DB2BF;
+    width: 68vw;
+    border-radius: 1.5vh;
+    border: 5px solid #040D12;
+}
+.outputbox{
+    padding: 1vw;
+    border-radius: 1vh;
+    width: 23vw;
+    font-size: larger;
+    background-color: #040D12;
+    color: #9DB2BF;
+}
+.outdate{
+    margin:1vw;
+    padding-top: 0.5vh;
+    font-size: large;
+}
+.outca{
+    margin:1.2vw;
+    font-size: large;
+}
+.checkbox{
+    margin-top: 0.8vw;
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    border: 5px solid #040D12;
+}
+button:hover{
+    border: 5px solid #93B1A6 ;
+}
+.editbtn{
+    background-color: #5C8374;
+    padding: 1.5vh;
+    border-radius: 1vh;
+    font-size: larger;
+    width: 10vw;
+}
+.tickbox{
+    background-image:url(tick.png) ;
+    background-size: contain;
+}
+
+footer {
+    background-color: #183D3D;
+    color: #040D12;
+    text-align: center;
+    padding: 1vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    word-spacing: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100px; 
+    }
+    .sidebar .heading{
+        font-size: 3vh;
+    }
+    .sidebar h3{
+        font-size: 2vh;
+    }
+    .sidebar input{
+        width: 1vw;
+        height: 1vh;
+    }
+    #addbtn{
+        height: 40px;
+        width: 40px;
+        font-size: 10px;
+        padding: 5px;
+    }
+    #dateinput{
+        font-size: 10px;
+        width: 60px;
+    }
+    #selectcat{
+        font-size: 10px;
+        width: 75px;
+    }
+    .main {
+        margin-left: 100px; 
+        
+    }
+    .main h2{
+        font-size: 10px;
+        display: none;
+    }
+    #dateDisplay{
+        font-size: 8px;
+        display: none;
+    }
+    .inputsearch{
+        width: 100px;
+        height: 20px;
+        font-size: small;
+    }
+    .searchbtn{
+        font-size: 10px;
+        width: 50px;
+        height: 20px;
+        padding-top: 3px;
+    }
+    .main2{
+        margin-left: 110px;
+        padding: 10px;
+        width: 240px;
+        
+    }
+    .outputbox{
+        height: 23px;
+        width: 70px;
+    }
+    .checkbox{
+        display: none;
+    }
+    .editbtn{
+        height: 10px;
+        width: 40px;
+        padding-bottom: 20px;
+        font-size: x-small;
+        margin-left: 5px;        
+    }
+    .outdate{
+        font-size:x-small;
+        margin-left: 6px;
+    }
+    .outca{
+        margin-top: 8px;
+        font-size: x-small;
+    }
+    .addbtn{
+        padding: 10px;
+        width: 50px;
+        height: 30px;
+        font-size: x-small;
+    }
+}
